@@ -1,0 +1,23 @@
+/*Login Form */
+form .ng-dirty.ng-invalid {
+    border: 1px solid red;
+}
+form .ng-valid {
+    border: 1px solid green;
+}
+
+/*==============
+ | search form
+*===============*/
+
+#settingsModal > div > div > div.modal-body > form > fieldset > div:nth-child(9) {
+   margin-bottom: 8%;
+}
+
+#search-form-horizontal{
+    div {
+        label {
+            font-weight: 700;
+        }
+    }
+}

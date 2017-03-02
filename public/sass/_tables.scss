@@ -1,0 +1,15 @@
+.clickableRow {
+        cursor: pointer;
+    }
+
+    .table{
+        display: table;
+        width:100%
+    }
+    .row{
+        display: table-row;
+    }
+    .cell{
+        display: table-cell;
+        width:20%
+    }

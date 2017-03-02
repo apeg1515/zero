@@ -1,0 +1,32 @@
+{
+  "name": "zero",
+  "description": "the begining of everything",
+  "main": "app.js",
+  "authors": [
+    "alex peguero"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "plotly.js": "^1.21.2",
+    "angular": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-animate": "^1.6.0",
+    "angular-messages": "^1.6.0",
+    "ngstorage": "^0.3.11",
+    "animate.css": "^3.5.2",
+    "pikaday": "^1.5.1",
+    "leaflet": "^1.0.2",
+    "bootbox.js": "^4.4.0",
+    "angular-loading-bar": "^0.9.0"
+  }
+}

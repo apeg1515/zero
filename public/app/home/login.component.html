@@ -1,0 +1,70 @@
+<div class="row col-md-12">
+    <div class="col-md-6">
+
+        <form class="form-horizontal"
+              novalidate
+              name="login"
+              ng-controller="LoginController as ctrl"
+              ng-submit="ctrl.onSubmit();">
+
+            <fieldset>
+            <legend>Login</legend>
+
+            <div class="form-group">
+                <label for="email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input
+                     class="form-control"
+                     type="text"
+                     name="email"
+                     placeholder="enter email"
+                     ng-model="ctrl.user.email"
+                     ng-minlength="5"
+                     required="required">
+                </div>
+            </div><!-- end of form-group -->
+            <div
+                class="col-lg-10 col-md-offset-2"
+                 ng-if="login.email.$touched"
+                 ng-messages="login.email.$error">
+                    <div ng-message="minlength">
+                        Minimum of 2 characters
+                    </div>
+                    <div ng-messages-include="generic-messages.html"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                    <input class="form-control"
+                           placeholder="Password"
+                           type="password"
+                           name="password"
+                           ng-model="ctrl.user.password"
+                           ng-minlength="8"
+                           ng-maxlength="20"
+                           ng-pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/"
+                           required="required">
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-offset-2"
+                 ng-if="login.password.$touched"
+                 ng-messages="login.password.$error"
+                 ng-messages-multiple>
+                <div ng-repeat="error in ctrl.passwordErrors">
+                    <div ng-message-exp="error.type">
+                        {{ error.text }}
+                    </div>
+                </div>
+            </div>
+
+                <button type="submit" class="btn btn-primary">
+                    submit
+                </button>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+

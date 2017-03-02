@@ -1,0 +1,68 @@
+<!doctype HTML>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index</title>
+        <base href="/">
+        <script type="text/ng-template" id="generic-messages.html">
+            <div ng-message="required">
+                This field is required, please fill it in
+            </div>
+            <div ng-message="minlength">
+                This field is too short
+            </div>
+        </script>
+
+        <!-- bower:css -->
+        <!-- endbower -->
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="build/bundle.css"/>
+        <link rel="stylesheet" href="build/main.css"/>
+
+    </head>
+    <body>
+
+        <main ui-view="home"></main>
+        <div ui-view="dashboard"></div>
+        <div ui-view="profile"></div>
+
+        <!-- endbower -->
+        <!-- custom JS -->
+        <script src="build/bundle.js"> </script>
+        <!-- <script src="build/vendor.js"> </script> -->
+
+
+        <script src="app/app.js"> </script>
+        <script src="app/dashboard/dashboard.component.js"> </script>
+        <script src="app/dashboard/dashboard.methods.js"> </script>
+
+        <script src="app/directives/selector.js"> </script>
+        <script src="app/directives/validpassword.js"> </script>
+        <script src="app/directives/dashboard-navbar.directive.js"> </script>
+
+        <script src="app/home/home.component.js"> </script>
+        <script src="app/home/home.methods.js"> </script>
+        <script src="app/home/login.component.js"> </script>
+        <script src="app/home/register.component.js"> </script>
+        <script src="app/home/LoginController.js"> </script>
+        <script src="app/home/RegisterController.js"> </script>
+
+        <script src="app/services/authService.js"> </script>
+        <script src="app/services/homeServices.js"> </script>
+        <script src="app/services/searchService.js"> </script>
+
+        <script src="app/profile/profile.component.js"> </script>
+        <script src="app/profile/profile.methods.js"> </script>
+        <script src="app/profile/billing.component.js"> </script>
+        <script src="app/profile/user.component.js"> </script>
+        <script src="app/profile/notifications.component.js"> </script>
+        <script src="app/profile/security.component.js"> </script>
+        <script src="app/profile/admin.component.js"> </script>
+        <script src="app/profile/saved.component.js"> </script>
+
+    </body>
+
+</html>

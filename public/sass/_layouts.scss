@@ -1,0 +1,99 @@
+/*home detail*/
+
+.home-details {
+    margin-top: 7%;
+}
+
+/*====================
+ | profile component
+ =====================*/
+#profile-list-group {
+    a {
+        &:first-child {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+        &:last-child {
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        margin-bottom: 7px;
+    }
+    a.active {
+        background-color: #2a71c9;
+        border-color: #1d252b;
+    }
+}
+/*============================
+ | profile: billing component
+ ============================*/
+#billing-panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: -1.5%;
+}
+
+#billing-list-group {
+    li {
+        &:first-child {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            margin-bottom: 7px;
+        }
+        &:nth-child(2) {
+            margin-bottom: 7px;
+        }
+        &:last-child {
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            margin-bottom: -14px;
+        }
+    }
+}
+/*============================
+ | profile: saved component
+ ============================*/
+#saved-alert-info {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #555555;
+    &:hover  {
+        background-color: #202330;
+        color: #fff;
+        a{
+            color: #fff;
+        }
+        i{
+            color:#fff;
+        }
+        .btn-link {
+            background-color: #346fb8
+        }
+        .close {
+            color: #fff;
+        }
+    }
+    a {
+        color: #555555;
+        margin-left: 1%;
+        font-weight: 400;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .btn-link {
+        border-radius: 0px;
+    }
+
+}
+
+/*============================
+ | search
+ ============================*/
+.search-details {
+    margin-top: 5%;
+}
+

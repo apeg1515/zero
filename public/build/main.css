@@ -1,0 +1,263 @@
+#search-menu-btn {
+  text-transform: none;
+  border-radius: 0px; }
+
+.accordion {
+  margin-bottom: 20px; }
+
+.accordion-group {
+  margin-bottom: 2px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px; }
+
+.accordion-heading {
+  border-bottom: 0; }
+
+.accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px; }
+
+.accordion-toggle {
+  cursor: pointer; }
+
+.accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid #e5e5e5; }
+
+/*Login Form */
+form .ng-dirty.ng-invalid {
+  border: 1px solid red; }
+
+form .ng-valid {
+  border: 1px solid green; }
+
+/*==============
+ | search form
+*===============*/
+#settingsModal > div > div > div.modal-body > form > fieldset > div:nth-child(9) {
+  margin-bottom: 8%; }
+
+#search-form-horizontal div label {
+  font-weight: 700; }
+
+/*home detail*/
+.home-details {
+  margin-top: 7%; }
+
+/*====================
+ | profile component
+ =====================*/
+#profile-list-group a {
+  margin-bottom: 7px; }
+  #profile-list-group a:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px; }
+  #profile-list-group a:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+
+#profile-list-group a.active {
+  background-color: #2a71c9;
+  border-color: #1d252b; }
+
+/*============================
+ | profile: billing component
+ ============================*/
+#billing-panel {
+  box-shadow: none;
+  margin-top: -1.5%; }
+
+#billing-list-group li:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-bottom: 7px; }
+
+#billing-list-group li:nth-child(2) {
+  margin-bottom: 7px; }
+
+#billing-list-group li:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-bottom: -14px; }
+
+/*============================
+ | profile: saved component
+ ============================*/
+#saved-alert-info {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  color: #555555; }
+  #saved-alert-info:hover {
+    background-color: #202330;
+    color: #fff; }
+    #saved-alert-info:hover a {
+      color: #fff; }
+    #saved-alert-info:hover i {
+      color: #fff; }
+    #saved-alert-info:hover .btn-link {
+      background-color: #346fb8; }
+    #saved-alert-info:hover .close {
+      color: #fff; }
+  #saved-alert-info a {
+    color: #555555;
+    margin-left: 1%;
+    font-weight: 400; }
+    #saved-alert-info a:hover {
+      color: #fff; }
+  #saved-alert-info .btn-link {
+    border-radius: 0px; }
+
+/*============================
+ | search
+ ============================*/
+.search-details {
+  margin-top: 5%; }
+
+/*============
+ Main Navbar
+=============*/
+.navbar-default {
+  background-color: #333333; }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff; }
+
+a.active {
+  background: #425861; }
+
+/*=================
+ Dashboard Navbar
+==================*/
+#dashboard-navbar {
+  background: #202330; }
+
+.clickableRow {
+  cursor: pointer; }
+
+.table {
+  display: table;
+  width: 100%; }
+
+.row {
+  display: table-row; }
+
+.cell {
+  display: table-cell;
+  width: 20%; }
+
+#search-btn-group-justified a.btn {
+  text-transform: none; }
+
+/*=========================
+ *  side modal
+ *========================*/
+#dashboard-cog {
+  color: #fff; }
+
+/*bootstrap.css || bootswatch.css */
+.modal-backdrop {
+  background-color: rgba(225, 218, 218, 0) !important; }
+
+/*================================ */
+#settingsModal {
+  overflow: hidden;
+  /*position: fixed;*/
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*z-index: 1050;*/
+  webkit-overflow-scrolling: touch;
+  outline: 0; }
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 400px;
+  height: 100%;
+  transform: translate3d(0%, 0, 0); }
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto; }
+
+.modal-content {
+  border-radius: 0px; }
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 2px 15px 80px; }
+
+/*Left*/
+.modal.left.fade .modal-dialog {
+  left: -320px;
+  transition: opacity 0.15s linear, left 0.15s ease-out; }
+
+.modal.left.fade.in .modal-dialog {
+  left: 0; }
+
+/* Setting Modal (side left) */
+#settingsModal > div > div > div.modal-header {
+  /*box-shadow: 0 0 5px #403D3D;*/ }
+
+#settingsModal > div > div > div.modal-body > setting-modalbody > div > div > ul > li > a {
+  padding: 10px 20px !important; }
+
+#settingsModal > div > div > div.modal-body > setting-modalbody > div > div > ul {
+  border-bottom: none; }
+
+#settingsModal > div > div > div.modal-body > setting-modalbody > div > div > ul > li > a > .fa-user {
+  font-size: 28px;
+  background: #666;
+  background: rgba(38, 134, 136, 0.72);
+  padding: 10px;
+  border-radius: 100%;
+  border: 0px solid #101010;
+  color: #fff;
+  box-shadow: 0 1px 9px rgba(70, 74, 71, 0.46);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  transition: .5s; }
+
+#settingsModal > div > div > div.modal-body > setting-modalbody > div > div > ul > li > a > .fa-share-alt {
+  font-size: 28px;
+  background: #666;
+  background: rgba(175, 63, 63, 0.87);
+  padding: 10px;
+  border-radius: 100%;
+  border: 0px solid #fff;
+  color: #fff;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.46);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  transition: .5s; }
+
+#settingsModal > div > div > div.modal-body > setting-modalbody > div > div > ul > li > a > .fa-tags {
+  font-size: 28px;
+  background: #666;
+  background: #5580d6;
+  padding: 10px;
+  border-radius: 100%;
+  border: 0px solid #fff;
+  color: #fff;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.46);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  transition: .5s; }
+
+/*=========================
+ * end of side modal
+ *========================*/

@@ -1,0 +1,136 @@
+<div class="row col-md-12">
+    <div class="col-md-6">
+        <form class="form-horizontal" ng-submit="ctrl.onRegister();">
+            <fieldset>
+                <legend>Register</legend>
+
+                <div class="form-group">
+                    <label for="firstname" class="col-lg-2 control-label">first name</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="firstname"
+                                ng-model="ctrl.register.fname"
+                                placeholder="enter your first name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname" class="col-lg-2 control-label">last name</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="lastname"
+                                ng-model="ctrl.register.lname"
+                                placeholder="enter your last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label"></label>
+                    <div class="col-lg-10">
+                        <div class="radio">
+                            <label>
+                                <input  type="checkbox"
+                                        name="checkbox-none-us"
+                                        id="checkbox-none-us" >
+                                none U.S. territory
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="col-lg-2 control-label">phone</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="phone"
+                                ng-model="ctrl.register.phone"
+                                placeholder="enter your phone number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="col-lg-2 control-label">address</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="address"
+                                ng-model="ctrl.register.street"
+                                placeholder="enter your address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="city" class="col-lg-2 control-label">city</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="city"
+                                ng-model="ctrl.register.city"
+                                placeholder="enter your city">
+                    </div>
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label for="state" class="col-lg-2 control-label">State</label>
+                    <sel-state selected-state="ctrl.register.state"></sel-state>
+                </div>
+
+                <div class="form-group">
+                    <label for="zip" class="col-lg-2 control-label">zip code</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="zip"
+                                ng-model="ctrl.register.zip"
+                                placeholder="enter your zip code">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">email</label>
+                    <div class="col-lg-10">
+                        <input  type="text"
+                                class="form-control"
+                                id="email"
+                                ng-model="ctrl.register.email"
+                                name="email"
+                                placeholder="enter your email">
+                    </div>
+                </div>
+
+               <div class="form-group">
+                    <label for="password1" class="col-lg-2 control-label">password</label>
+                    <div class="col-lg-10">
+                        <input  type="password"
+                                class="form-control"
+                                id="password1"
+                                ng-model="ctrl.register.password"
+                                placeholder="enter your password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password2" class="col-lg-2 control-label">password</label>
+                    <div class="col-lg-10">
+                        <input  type="password"
+                                class="form-control"
+                                id="password2"
+                                placeholder="re-enter your password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-default">submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</div><!-- end of rows -->

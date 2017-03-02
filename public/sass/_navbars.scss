@@ -1,0 +1,28 @@
+$standard: #333333;
+$white: #fff;
+$active: #425861;
+
+/*============
+ Main Navbar
+=============*/
+
+.navbar-default {
+    background-color: $standard;
+
+    .navbar-nav > li > a {
+        color: $white;
+    }
+}
+
+a.active {
+   background: $active;
+}
+
+/*=================
+ Dashboard Navbar
+==================*/
+
+#dashboard-navbar {
+    background: rgb(32, 35, 48);
+}
+
